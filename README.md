@@ -1,0 +1,2 @@
+# dns-trainings
+DNS Trainings
