@@ -44,6 +44,8 @@ func main() {
 			log.Printf("p=%3d, label length=%2d, name=%s", p, ll, tm)
 			p += ll
 		}
+		p++
+		log.Printf("QTYPE=%02X, QCLASS=%02X", b2[p:p+2], b2[p+2:p+4])
 
 		log.Printf("From: %s, Data: %012X , %x , %s", addr, b1, b2, tm)
 	}
